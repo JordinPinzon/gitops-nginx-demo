@@ -2,4 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: nginx-demo
-  
+  labels:
+    environment: development  # Etiqueta opcional
+  annotations:
+    description: "Namespace para el proyecto nginx-demo"  # Anotación opcional

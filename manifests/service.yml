@@ -3,9 +3,13 @@ kind: Service
 metadata:
   name: nginx-service
   namespace: nginx-demo
+  labels:
+    app: nginx-service  # Etiqueta opcional para identificar el servicio
+  annotations:
+    description: "Servicio ClusterIP para el proyecto nginx-demo"  # Documentación opcional
 spec:
   selector:
-    app: nginx
+    app: nginx  # Debe coincidir con el label del Deployment
   ports:
   - protocol: TCP
     port: 80

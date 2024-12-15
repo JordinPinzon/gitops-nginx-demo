@@ -1,21 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
-  namespace: nginx-demo
+  name: hola-mundo
+  namespace: demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: hola-mundo
   template:
     metadata:
       labels:
-        app: nginx
+        app: hola-mundo
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: hola-mundo
+        image: <TU_USUARIO_DOCKER_HUB>/hola-mundo:latest
         ports:
         - containerPort: 80
-  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hola-mundo
+  namespace: demo
+spec:
+  selector:
+    app: hola-mundo
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
