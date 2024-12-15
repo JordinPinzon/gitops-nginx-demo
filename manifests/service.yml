@@ -10,4 +10,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: LoadBalancer
+      nodePort: 30630  # Este es el puerto que usaremos para acceder al servicio
+  type: NodePort  # Cambié LoadBalancer a NodePort
