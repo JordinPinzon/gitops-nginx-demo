@@ -1,4 +1,4 @@
-# Demo Aplication with GitOps and Ngix
+## Demo Aplication with GitOps and Ngix
 
 This project is a demonstration of deploying applications using GitOps and NGINX as the web server. GitOps is a methodology for deploying and managing infrastructure and applications where the entire application lifecycle is handled through a Git repository. Changes in the repository are automatically reflected in the production environment using tools like ArgoCD.
 
@@ -10,8 +10,10 @@ Before running the application, make sure you have the following requirements:
 Docker installed on your machine.
 kubectl configured to interact with a Kubernetes cluster.
 ArgoCD installed and configured in your Kubernetes cluster to manage automatic resource synchronization.
-Installation and Running
-Option 1: Run Locally
+
+##Installation and Running
+
+#Option 1: Run Locally
 
 1. Clone this repository to your local machine:
 
