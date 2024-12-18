@@ -47,6 +47,8 @@ Now, you can access the application at http://localhost:8080 in your browser.
 
 ## View of the application successfully deployed with Kubernetes on Argo CD
 
+![Captura de pantalla 2024-12-14 225123](https://github.com/user-attachments/assets/09a87be7-757a-4b1e-a81d-6247f6443a70)
+
 ![Construccion de argocd](https://github.com/user-attachments/assets/d4fd9aa0-3a5a-417c-8f9e-465e0d07328d)
 
 
