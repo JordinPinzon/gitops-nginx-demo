@@ -1,4 +1,4 @@
-# GitOps NGINX Demo Application
+# Demo Aplication with GitOps and Ngix
 
 This project is a demonstration of deploying applications using GitOps and NGINX as the web server. GitOps is a methodology for deploying and managing infrastructure and applications where the entire application lifecycle is handled through a Git repository. Changes in the repository are automatically reflected in the production environment using tools like ArgoCD.
 
