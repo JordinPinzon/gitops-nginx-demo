@@ -11,9 +11,9 @@ Docker installed on your machine.
 kubectl configured to interact with a Kubernetes cluster.
 ArgoCD installed and configured in your Kubernetes cluster to manage automatic resource synchronization.
 
-##Installation and Running
+## Installation and Running
 
-#Option 1: Run Locally
+# Option 1: Run Locally
 
 1. Clone this repository to your local machine:
 
