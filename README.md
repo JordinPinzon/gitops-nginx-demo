@@ -17,8 +17,8 @@ ArgoCD installed and configured in your Kubernetes cluster to manage automatic r
 
 1. Clone this repository to your local machine:
 
-git clone https://github.com/your_username/your_repository.git
-cd your_repository
+git clone https://github.com/JordinPinzon/gitops-nginx-demo.git
+cd gitops-nginx-demo
 
 2. Build the Docker image:
 
@@ -27,9 +27,10 @@ docker build -t jordin13/hola-mundo .
 3.  Run the Docker container locally:
 
 docker run -d -p 8080:80 jordin13/hola-mundo
+
 Now, you can access the application at http://localhost:8080 in your browser.
 
-Option 2: Download the Image from Docker Hub
+## Option 2: Download the Image from Docker Hub
 If you prefer not to build the image yourself, you can pull the prebuilt image directly from Docker Hub:
 
 1. Pull the image from Docker Hub:
@@ -44,26 +45,11 @@ docker run -d -p 8080:80 jordin13/hola-mundo
 
 Now, you can access the application at http://localhost:8080 in your browser.
 
-Option 3: Run in Kubernetes with ArgoCD
-If you prefer to run the application in Kubernetes using ArgoCD for automatic synchronization, follow these steps:
+## View of the application successfully deployed with Kubernetes on Argo CD
 
-1. Make sure your Git repository is correctly configured in ArgoCD, and the files deployment.yml, namespace.yml, and service.yml are in the appropriate directory.
+![Construccion de argocd](https://github.com/user-attachments/assets/d4fd9aa0-3a5a-417c-8f9e-465e0d07328d)
 
-2. Create the resources in Kubernetes:
 
-Apply the Kubernetes configuration files from your terminal:
-
-kubectl apply -f manifests/namespace.yml
-kubectl apply -f manifests/deployment.yml
-kubectl apply -f manifests/service.yml
-Check the status of the resources in ArgoCD:
-
-3. Access the ArgoCD web interface.
-Verify that the resources are in "Healthy" state.
-If everything is configured correctly, ArgoCD will automatically sync the resources.
-4. Access the application:
-
-If you're using a NodePort service, access the application using the node's IP and the assigned port (e.g., http://<node-ip>:30630)
 
 Important Files
 - index.html: The HTML file that displays the message "Hello World from Docker!".
@@ -79,8 +65,7 @@ If you wish to contribute to this project, follow these steps:
 1. Fork the repository.
 2. Make your changes.
 3. Open a Pull Request with a detailed description of the changes made.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 
 
